@@ -143,13 +143,14 @@
 						</div>
 						<div class="form-group" style="    margin-top: 16px;">
 						    <div class="col-sm-offset-2 col-sm-10" style="width: 100%;margin: 0;">
-						      <button type="button" class="" id="login" onclick="LoginButton()" style="border: 1px #e46211 solid;width: 100%;background-color: #e46211;">
-						                     登录</button>
+						      <!-- <button type="submit" class="" id="login" onclick="LoginButton()" style="border: 1px #e46211 solid;width: 100%;background-color: #e46211;">
+						                     登录</button> -->
+						                     <input type="button" value="sumbit" id="name_sub" onclick="LoginButton()"/>
 						    </div>
 						</div>
 						<div class="form-group">
 						    <div class="col-sm-offset-2 col-sm-10" style="width: 100%;margin: 0;">
-						      <button type="button" class="" id="new" style="border: 1px #e46211 solid;width: 100%;background-color: #e46211;">
+						      <button type="submit" class="" id="new" style="border: 1px #e46211 solid;width: 100%;background-color: #e46211;">
 						                     新用户注册</button>
 						    </div>
 						</div>
@@ -331,10 +332,10 @@
 				data:data,
 				type:"POST",
 				dataType:'json',
-				 url:"login",
+				url:"login",
 				success:function(){
 					if(data){
-						location.href = "success.html";
+						location.href = "jsp/success.jsp";
 					}
 				}
 			})

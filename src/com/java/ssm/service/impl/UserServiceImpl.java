@@ -11,7 +11,7 @@ import com.java.ssm.entity.User;
 import com.java.ssm.service.UserService;
 
 @Service
-@Transactional
+
 public class UserServiceImpl implements UserService {
 
 	@Autowired
