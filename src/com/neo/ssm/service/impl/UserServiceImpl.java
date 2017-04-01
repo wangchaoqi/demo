@@ -1,4 +1,4 @@
-package com.java.ssm.service.impl;
+package com.neo.ssm.service.impl;
 
 import javax.annotation.Resource;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.java.ssm.dao.UserDao;
-import com.java.ssm.entity.User;
-import com.java.ssm.service.UserService;
+import com.neo.ssm.dao.UserDao;
+import com.neo.ssm.entity.User;
+import com.neo.ssm.service.UserService;
 
 @Service
 

@@ -1,6 +1,6 @@
-package com.java.ssm.dao;
+package com.neo.ssm.dao;
 
-import com.java.ssm.entity.User;
+import com.neo.ssm.entity.User;
 
 public interface UserDao {
 	

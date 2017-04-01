@@ -1,6 +1,6 @@
-package com.java.ssm.service;
+package com.neo.ssm.service;
 
-import com.java.ssm.entity.User;
+import com.neo.ssm.entity.User;
 
 public interface UserService {
 

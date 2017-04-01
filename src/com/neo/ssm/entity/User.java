@@ -1,4 +1,4 @@
-package com.java.ssm.entity;
+package com.neo.ssm.entity;
 
 public class User {
 

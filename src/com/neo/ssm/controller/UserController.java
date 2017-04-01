@@ -1,23 +1,31 @@
-package com.java.ssm.web.controller;
+package com.neo.ssm.controller;
 
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.java.ssm.entity.User;
-import com.java.ssm.service.UserService;
+import com.neo.ssm.entity.User;
+import com.neo.ssm.service.UserService;
 
 @Controller
+@RequestMapping(value ="/ngw2")
 public class UserController {
 	
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping(value="/login",method=RequestMethod.POST)
+	 @RequestMapping(value ="/", method =RequestMethod.GET)
+	    public String home(Model model)
+	    {        
+	        return"home";
+	    }
+	
+	@RequestMapping(value="/con/login",method=RequestMethod.POST)
 	@ResponseBody
 	 public boolean login(String username,String Password) throws IOException{       
 		System.out.println("qweqwe");
